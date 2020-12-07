@@ -1,0 +1,15 @@
+id,commonName,version,catalog.shortName,GPS,jsonurl,luminosity_distance,chirp_mass_source,chirp_mass
+GW150914-v3,GW150914,3,GWTC-1-confident,1126259462.4,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW150914/v3,440,28.6,
+GW151012-v3,GW151012,3,GWTC-1-confident,1128678900.4,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW151012/v3,1080,15.2,
+GW151226-v2,GW151226,2,GWTC-1-confident,1135136350.6,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW151226/v2,450,8.9,
+GW170104-v2,GW170104,2,GWTC-1-confident,1167559936.6,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170104/v2,990,21.4,
+GW170608-v3,GW170608,3,GWTC-1-confident,1180922494.5,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170608/v3,320,7.9,
+GW170729-v1,GW170729,1,GWTC-1-confident,1185389807.3,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170729/v1,2840,35.4,
+GW170809-v1,GW170809,1,GWTC-1-confident,1186302519.8,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170809/v1,1030,24.9,
+GW170814-v3,GW170814,3,GWTC-1-confident,1186741861.5,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170814/v3,600,24.1,
+GW170817-v3,GW170817,3,GWTC-1-confident,1187008882.4,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170817/v3,40,1.186,
+GW170818-v1,GW170818,1,GWTC-1-confident,1187058327.1,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170818/v1,1060,26.5,
+GW170823-v1,GW170823,1,GWTC-1-confident,1187529256.5,https://www.gw-openscience.org/eventapi/json/GWTC-1-confident/GW170823/v1,1940,29.2,
+GW190412-v2,GW190412,2,O3_Discovery_Papers,1239082262.2,https://www.gw-openscience.org/eventapi/json/O3_Discovery_Papers/GW190412/v2,740,13.3,15.2
+GW190521-v2,GW190521,2,O3_Discovery_Papers,1242442967.4,https://www.gw-openscience.org/eventapi/json/O3_Discovery_Papers/GW190521/v2,5300,64,117
+GW190814-v1,GW190814,1,O3_Discovery_Papers,1249852257,https://www.gw-openscience.org/eventapi/json/O3_Discovery_Papers/GW190814/v1,241,6.09,6.41
