@@ -7,7 +7,7 @@ var all_data = {};
 // preload table data
 function preload() {
   data = loadTable(
-    'normalized_ligo_data.csv',
+    'final_data.csv',
 		'csv',
       'header');
 
@@ -18,8 +18,8 @@ function preload() {
 
 function setup() {
        
-    createCanvas(1500, 2000) // displayWidth, displayHeight);
-// createCanvas(windowWidth-10, windowHeight-10);
+//createCanvas(1500, 2000) // displayWidth, displayHeight);
+ createCanvas(windowWidth-10, windowHeight-10);
     ww = width
     wh = height
     // what are the columns?
@@ -34,12 +34,13 @@ function setup() {
              all_data[data.columns[i]] = all_points
 
     }
+    noLoop();
     
     
 }
 
 function draw() {
-    background(20,0,0,50);
+    background(30,0,0,255);
 
     textFont(inconsolata);
     textSize(32);
@@ -53,10 +54,11 @@ function draw() {
 
     for (let i = 0; i < data.getColumnCount(); i++) {
       
-    
+    text(curve_bounds[1], 20*i) //, x2, y2)
     beginShape()
      for (let r = 0; r < nr_points; r++) {
-      curveVertex(curve_bounds[0]+r/1.5, 20*i + all_data[data.columns[i]][r]);
+      curveVertex(curve_bounds[0]+1/i*r/1.1, wh/3-20*i + all_data[data.columns[i]][r]);
+      
      }
      endShape();
 }
