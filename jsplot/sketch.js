@@ -1,3 +1,6 @@
+// ideas https://www.openprocessing.org/sketch/670351
+// this useful? https://www.openprocessing.org/sketch/875157
+
 let data;
 let nr_points;
 let curve_bounds = [];
@@ -7,7 +10,7 @@ var all_data = {};
 // preload table data
 function preload() {
   data = loadTable(
-    'final_data.csv',
+    'finalfinal.csv',
 		'csv',
       'header');
 
@@ -45,23 +48,37 @@ function draw() {
     textFont(inconsolata);
     textSize(32);
     
-    curve_bounds[0] = ww/2-1200/2;    
-    curve_bounds[1] = ww/2+1200/2;
+    curve_bounds[0] = ww/2-1200/3;    
+    curve_bounds[1] = ww/2+1200/3;
 
     fill(0); // fill the curve
     stroke(225);
-    strokeWeight(1);
+    strokeWeight(1.2);
 
-    for (let i = 0; i < data.getColumnCount(); i++) {
+    for (let i = 1; i < data.getColumnCount(); i++) {
       
     text(curve_bounds[1], 20*i) //, x2, y2)
     beginShape()
      for (let r = 0; r < nr_points; r++) {
-      curveVertex(curve_bounds[0]+1/i*r/1.1, wh/3-20*i + all_data[data.columns[i]][r]);
+      curveVertex(curve_bounds[0]+r/2, wh/2-5*i + 0.5*all_data[data.columns[i]][r]);
       
      }
      endShape();
 }
+
+    for (let i = 1; i < data.getColumnCount(); i++) {
+      
+    text(curve_bounds[1], 20*i) //, x2, y2)
+    beginShape()
+     for (let r = 0; r < nr_points; r++) {
+      curveVertex(curve_bounds[0]+r/2, - 5*data.getColumnCount()+1 + wh/2-5*i + 0.5*all_data[data.columns[i]][r]);
+      
+     }
+     endShape();
+}
+
+
+
 }
 
 
